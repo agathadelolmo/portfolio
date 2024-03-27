@@ -11,6 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tu página web</title>
+		<style>
+			.inactive-link {
+			color: gray; /* Cambia el color del texto para indicar que está desactivado */
+			pointer-events: none; /* Evita que el enlace sea clickeable */
+			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
+			text-decoration: none; /* Elimina cualquier decoración de enlace */
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -91,6 +102,18 @@
 								</article>
 								<article>
 									<header>
+										<span class="date">15 de Noviembre, 2023</span>
+										<h2><a href="https://drive.google.com/file/d/1o3qOXZvYI4xLHwCGacpMtpvtoFePuSfN/view?usp=drive_link">ESTUDIO DE LA AGRUPACIÓN SOCIOECONÓMICA DE LAS COMUNIDADES AUTÓNOMAS DE ESPAÑA</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1o3qOXZvYI4xLHwCGacpMtpvtoFePuSfN/view?usp=drive_link" class="image fit"><img src="images/map.png" alt="" /></a>
+									<p>Usando RStudio y Weka, empleaé metodologías de agrupamiento directo y jerárquico con el fin de categorizar comunidades en grupos que sean homogéneos de forma interna pero heterogéneos con respecto al resto de grupos.
+										Este enfoque tiene como objetivo mejorar nuestra comprensión de las características compartidas y las distinciones entre las diferentes comunidades españolas. 📍</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1o3qOXZvYI4xLHwCGacpMtpvtoFePuSfN/view?usp=drive_link" class="button">Leer Más</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
 										<span class="date">30 de Noviembre, 2023</span>
 										<h2><a href="https://drive.google.com/file/d/1kvU2lJ8NBAA4nq9tZ49rvtJjWA0x8whU/view?usp=drive_link">Racionalidad vs Moralidad:
 											Un análisis profundo del experimento del silbato para sistemas de control de impuestos</a></h2>
@@ -99,6 +122,30 @@
 									<p>Usando RStudio y Excel identifiqué patrones de comportamiento examinando los datos para tomar decisiones más informadas en el futuro en cuanto al control de impuestos. 🧾</p>
 									<ul class="actions special">
 										<li><a href="https://drive.google.com/file/d/1kvU2lJ8NBAA4nq9tZ49rvtJjWA0x8whU/view?usp=drive_link" class="button">Leer Más</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">12 de Diciembre, 2023</span>
+										<h2><a href="https://drive.google.com/file/d/1Y-gjWYePfRZY-d27IgsYVQa2O0JjjBEW/view?usp=drive_link">ESTUDIO DE LAS REGLAS DE ASOCIACIÓN EN PRODUCTOS DE SUPERMERCADOS Y PLANTILLAS DE EMPLEADOS</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1Y-gjWYePfRZY-d27IgsYVQa2O0JjjBEW/view?usp=drive_link" class="image fit"><img src="images/super.jpg" alt="" /></a>
+									<p>Usando Weka empleé técnicas de asociación para encontrar patrones interesantes en la compra de productos en supermercados y en las plantillas de empleados de una empresa para tomar decisiones respecto a la disposición de productos en el establecimiento y estrategias del equipo de RRHH. 🛒</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1Y-gjWYePfRZY-d27IgsYVQa2O0JjjBEW/view?usp=drive_link" class="button">Leer Más</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">4 de Enero, 2024</span>
+										<h2><a href="https://drive.google.com/file/d/1GVcpY_FdIWoALIVqkM2cku14LwTvGcH5/view?usp=drive_link">ANÁLISIS FACTORIAL
+											DE LAS VARIABLES SOCIOECONÓMICAS SOBRE LAS COMUNIDADES AUTÓNOMAS DE ESPAÑA
+											</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1GVcpY_FdIWoALIVqkM2cku14LwTvGcH5/view?usp=drive_link" class="image fit"><img src="images/dendograma.png" alt="" /></a>
+									<p>Usando Rstudio y Weka usé técnicas de factorización para tratar de explicar la mayor parte de las variables originales con un número menor de factores. 📋</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1GVcpY_FdIWoALIVqkM2cku14LwTvGcH5/view?usp=drive_link" class="button">Leer Más</a></li>
 									</ul>
 								</article>
 								<article>
@@ -151,14 +198,15 @@
 							<footer>
 								<div class="pagination">
 									<!--<a href="#" class="previous">Prev</a>-->
+									<a class="previous inactive-link" href="#">Previo</a>
 									<a href="spanish.html" class="page active">1</a>
-									<a href="#" class="page">2</a>
+									<a href="spanish2.html" class="page">2</a>
 									<a href="#" class="page">3</a>
 									<span class="extra">&hellip;</span>
 									<a href="#" class="page">8</a>
 									<a href="#" class="page">9</a>
 									<a href="#" class="page">10</a>
-									<a href="#" class="next">Siguiente</a>
+									<a href="spanish2.html" class="next">Siguiente</a>
 								</div>
 							</footer>
 
