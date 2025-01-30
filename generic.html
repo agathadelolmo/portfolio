@@ -1,16 +1,117 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>About me - Agatha del Olmo</title>
+		<title>Portfolio of Ágatha del Olmo Tirado</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Your Website</title>
+		<style>
+			.inactive-link {
+			color: gray; /* Changes the text color to indicate it's deactivated */
+			pointer-events: none; /* Prevents the link from being clickable */
+			cursor: default; /* Changes the cursor to the default to indicate it's not interactive */
+			text-decoration: none; /* Removes any link decoration */
+			}
+		</style>
+		
+	<head>
+		<title>About Me - Horizontal Scroll</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			    /* Style for the floating window */
+				.floating-spotify {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				width: 100%;
+				max-width: 400px;
+				height: 152px;
+				z-index: 9999;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 12px;
+				background-color: white;
+				overflow: hidden;
+				display: none; /* Hidden by default */
+				}
+
+				/* Style for the iframe inside the floating window */
+				.floating-spotify iframe {
+				border-radius: 12px;
+				width: 100%;
+				height: 100%;
+				}
+
+				/* Close button */
+				.close-btn {
+				position: absolute;
+				top: 5px;
+				left: 5px; /* Changed to the left */
+				background-color: rgba(0, 0, 0, 0.2);
+				color: white;
+				border: none;
+				padding: 5px;
+				font-size: 20px; /* Adjusted the size of the cross */
+				cursor: pointer;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				line-height: 30px; /* Now better aligns the "X" */
+				text-align: center;
+				line-height: 10px;
+				font-weight: bold;
+				}
+			#scroll-container {
+				display: flex;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				gap: 20px;
+				padding: 20px;
+				background: url('images/pic08.jpg') no-repeat center center/cover;
+				margin-top: 20px;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				scrollbar-width: none; /* Hides the scroll bar in Firefox */
+			}
+
+			#scroll-container::-webkit-scrollbar {
+				display: none; /* Hides the scroll bar in Chrome and Safari */
+			}
+
+			.scroll-item {
+				flex: 0 0 80%; /* Adjust width */
+				scroll-snap-align: center;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				padding: 20px;
+				background-color: rgba(255, 255, 255, 0.8);
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			.scroll-item img {
+				width: 100%;
+				border-radius: 10px;
+				margin-bottom: 15px;
+			}
+
+			.scroll-item blockquote {
+				font-style: italic;
+				color: #555;
+				border-left: 4px solid #58545c;
+				padding-left: 10px;
+				margin: 10px 0;
+			}
+
+			.scroll-item h3 {
+				margin-top: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,14 +120,14 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="https://drive.google.com/file/d/1erFlIAG6_1GtMGIAmaEYYKjS0CXJWon4/view?usp=drive_link" class="logo">Read my CV</a>
+						<a href="resume.html" class="logo">Read my CV</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Portfolio Page</a></li>
-							<li class="active"><a href="generic.html">About Me Page</a></li>
+							<li><a href="spanish.html">Portfolio</a></li>
+							<li class="active"><a href="spanishgeneric.html">About Me</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -40,67 +141,202 @@
 					<div id="main">
 
 						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Ágatha del Olmo Tirado</h1>
-								</header>
-								<div class="image left"><img src="images/yo.jpeg" alt="" /></div>
-								<p>Hello! I’m Ágatha Del Olmo Tirado. I am a passionate Data Analyst who thrives on the challenge of transforming complex and intricate data into insightful, actionable intelligence.
-									My journey in the field of data analysis began with an intense curiosity about the stories that data can tell, which led me to pursue a career where I could dive deep into data, uncover its hidden patterns, and bring those patterns to light helping businesses and organizations in decision-making.</p>
-								<blockquote>“All things being equal, the simplest solution tends to be the best one.”</blockquote>
-								<p>-Razor of Ockam</p>
-								<h3>Academic History</h3>
-								<p>I am currently studing a Bachelor’s degree in Business Intelligence and Analytics from the esteemed University of Valencia (UV). 
-									My academic journey has been marked by my Magna Cum Laude in Data Mining in Businesses, Prediction in Cross-sectional Data, and Prices and Competitive Market. </p>
-								<h3>Technical Proficiency</h3>
-								<p>My technical arsenal is equipped with skills in Data Mining & ETL (Extract, Transform, Load), honed through hands-on experience with RStudio, Microsoft Excel, PowerBI and Weka. 
-									Machine Learning & Algorithm Modelling are my playgrounds – Python, R, Lingo, SQL, Oracle and Wolfram Mathematica are the tools of my trade.</p>
-								<h3>Professional Journey</h3>
-								<p>In 2024 I undertook a Data Science Internship at Meriskill where I was instrumental in realising intricate projects which involved using Excel and PowerBI to build an empowered business analytics dashboard. </p>	
-								<h3>Soft Skills</h3>
-								<p>I pride myself on problem identification & solving skills coupled with verbal & written communication prowess. I am very adaptative, I made this web in just a week after never having done HTML ;), I managed to create my own portfolio where I believe my detail orientation is obvious. </p>	
-								<h3>Multilingual </h3>
-								<p>I communicate seamlessly in Spanish (native), English (advanced), Catalan (elementary), French (beginner) and Arabic (beginner).</p>	
-								<h3>Extracurricular Engagement </h3>
-								<p>I participated in Idees Motivem UV - 2022 where we constructed a multidisciplinary team coordinated by college tutors to present entrepreneurial & societal innovative solutions for businesses.</p>
-								<p>I also participated in Excel Fundamentals for Business - 2023, organized by the Banco Santander International Finance Chair, lasting 35 intensive hours, taught by the Professor Josep Lledó (University of Valencia).</p>	
-							
-							</section>
+						<section class="post">
+							<header class="major">
+								<h1>Ágatha del Olmo Tirado</h1>
+							</header>
+							<div class="container">
+								<p class="fade-up">While you discover a bit about me, I invite you to listen to the playlist that accompanies me while I work. I hope you like it! 🎶	</p> 
+								<!-- Button to open the floating window -->
+								<button onclick="openSpotify()">Listen to me!</button>
+			
+								<!-- Music Section -->
 
+					<!-- Floating Spotify Container -->
+					<div id="spotify-container" class="floating-spotify">
+						<button class="close-btn" onclick="closeSpotify()">×</button>
+						<iframe src="https://player.spotify.com/embed/playlist/70E2PO0iRuTZrcm3PK20rb?utm_source=generator" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 					</div>
+
+					<script>
+						// Function to open the floating window
+						function openSpotify() {
+						  document.getElementById("spotify-container").style.display = "block";
+						}
+					
+						// Function to close the floating window
+						function closeSpotify() {
+						  document.getElementById("spotify-container").style.display = "none";
+						}
+					  </script>					
+
+							<div id="scroll-container">
+								<!-- Story 1 -->
+								<div class="scroll-item">
+									<h3>The trip that changed my life - June 2019</h3>
+									<img src="images/sf.jpg" alt="San Francisco" />
+									<p>I was born and raised in a small town in Spain, surrounded by my family and friends, which made me feel so comfortable that I never felt the need to travel outside of Spain.</p>
+									<p>However, in the summer of 2019, I had the incredible opportunity to visit some relatives in the city of San Francisco, USA.</p>
+									<p>I toured Silicon Valley, visited the offices of Google, Facebook, and Glass, the University of Berkeley... Exploring such a technology-driven world up close sparked in me a new perspective on what I could achieve in the future: a real impact.</p>
+									<blockquote>"Change begins at the end of your comfort zone."</blockquote>
+									<p>- Roy T. Bennett</p>
+								</div>
+						
+								<!-- Story 2 -->
+								<div class="scroll-item">
+									<h3>My first contact with programming - April 2021</h3>
+									<div style="text-align: center;">
+										<iframe src="https://scratch.mit.edu/projects/525149718/embed" allowtransparency="true" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+									</div>
+									<div style="min-height: 15px;"></div>
+									<p>In my first year of high school, I chose computer science as a subject. I learned the basics of SQL and hardware, but what really captured my interest was programming.</p>
+									<p>For the final project, I had to create a video game with Scratch. Just around that time, I contracted COVID, and during my isolation, I spent entire days working on it.</p>
+									<p>It was the most exciting work I did in high school. I stayed up until 4 a.m. perfecting every detail.</p>
+									<p>If you'd like to try it, here are some tips:</p>
+									<ul>
+										<li>Use the arrow keys and space bar to select.</li>
+										<li>Press the <strong>m</strong> key to change the music and left-click to fish.</li>
+										<li>To enter a house, select the sign next to it.</li>
+									</ul>
+								</div>
+						
+								<!-- Story 3 -->
+								<div class="scroll-item">
+									<h3>The importance of a good teacher - May 2022</h3>
+									<img src="images/grad.jpg" alt="Graduation" />
+									<p>Interestingly, throughout high school, I was convinced that I was going to study history and become a teacher.</p>
+									<p>But on the day of my graduation, after receiving an Honors certificate, my economics teacher, Juan Carlos, told me about a new degree in Valencia.</p>
+									<p>He explained that it combined programming, economics, and data analysis, and that it had a technical focus that could complement any other discipline.</p>
+									<p>Since I have always trusted my teachers' wisdom, I researched the degree further... It was called Business Intelligence and Analytics (BIA).</p>
+									<p>The truth is that when I enrolled in the degree, I didn't understand what the subjects meant, but "data mining" sounded fun, and that, along with my intuition, was enough to convince me to sign up.</p>
+								</div>
+
+								<!-- Story 4 -->
+								<div class="scroll-item">
+									<h3>A big change - September 2022</h3>
+									<img src="images/clase.jpg" alt="Graduation" />
+									<p>My first year in Valencia was a whole adventure. I started university in a new city, sharing an apartment with people I didn’t know at all.</p>
+									<p>New classes, new classmates, new subjects... Without a doubt, it was a big shock that forced me to adapt and grow.</p>
+									<p>I used to miss the tranquility of my hometown, but over time, I learned to appreciate the many activities Valencia has to offer: I took English, Valencian, and French courses, participated in hackathons, joined yoga classes...</p>
+									<p>I have learned to appreciate how lucky I am to be able to study such a relevant degree, be independent, and have the opportunity to meet so many different people.</p>
+									</div>
+									
+									<div class="scroll-item">
+										<h3>What Valencia Has Always Offered Me</h3>
+										<div class="image-slider">
+											<img id="slider-image" src="images/blogyo.jpg" alt="Academic experience" />
+											<button class="prev" onclick="changeImage(-1)">
+												<img src="images/arrowl.png" />
+											</button>
+											<button class="next" onclick="changeImage(1)">
+												<img src="images/arrowr.png" />
+											</button>
+										</div>
+										<p>Valencia and my degree have offered me incredible opportunities from day one until today. Here are just a few examples:</p>
+										<p>In the first image, I am at the opening event of Economia DataTech, which aims to maintain contact with graduates of the BIA Degree by organizing events, talks, and networking sessions.</p>
+										<p>In the second image, I am with my classmates at the DataViz Challenge: Valencia Smart Vision, where we had the task of creating a dashboard with PowerBI about tourism in Valencia.</p>
+										<p>In the last image, you can see me with my colleague María, with whom I attended VDS, the international technology event organized by Startup Valencia at the City of Arts and Sciences, where I met amazing professionals.</p>
+									</div>
+																	
+								<script>
+									const images = ["images/blogyo.jpg", "images/dataviz.jpg", "images/vds1.jpg"];
+									let currentIndex = 0;
+								
+									function changeImage(direction) {
+										currentIndex += direction;
+										if (currentIndex < 0) currentIndex = images.length - 1;
+										if (currentIndex >= images.length) currentIndex = 0;
+										document.getElementById("slider-image").src = images[currentIndex];
+									}
+								</script>
+								
+								<style>
+									.image-slider {
+										position: relative;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										max-width: 100%;
+									}
+
+									.image-slider img {
+										width: auto;
+										max-width: 100%;
+										height: auto;
+										display: block;
+									}
+
+									.prev, .next {
+										position: absolute;
+										top: 50%;
+										transform: translateY(-50%);
+										background: none;
+										border: none !important;     /* Elimina cualquier borde */
+										padding: 0;
+										cursor: pointer;
+										z-index: 10;
+										outline: none !important;    /* Elimina cualquier borde de enfoque */
+										box-shadow: none !important; /* Asegura que no haya sombra de enfoque o borde */
+									}
+
+									.prev img, .next img {
+										width: 80px;  /* Ajusta el tamaño de las flechas según lo necesites */
+										height: 80px;
+									}
+
+									.prev {
+										left: 10px;
+									}
+
+									.next {
+										right: 10px;
+									}
+								</style>
+
+								
+							</div>
+						</section>
+						
+									</div>
+								</div>
+							</section>
+					</div>
+			</div>
+			
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">agathadelolmo@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+				<footer id="footer">
+						
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">agathadelolmo@gmail.com</a></p>
 						</section>
-					</footer>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+								<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Ágatha del Olmo Tirado</li></ul>
-					</div>
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Ágatha del Olmo Tirado</li></ul>
+				</div>
 
-			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>

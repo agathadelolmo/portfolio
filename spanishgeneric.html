@@ -1,16 +1,117 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Sobre mí - Agatha del Olmo</title>
+		<title>Portfolio de Ágatha del Olmo Tirado</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tu página web</title>
+		<style>
+			.inactive-link {
+			color: gray; /* Cambia el color del texto para indicar que está desactivado */
+			pointer-events: none; /* Evita que el enlace sea clickeable */
+			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
+			text-decoration: none; /* Elimina cualquier decoración de enlace */
+			}
+		</style>
+		
+	<head>
+		<title>Sobre mí - Scroll Horizontal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			    /* Estilo para la ventana flotante */
+				.floating-spotify {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				width: 100%;
+				max-width: 400px;
+				height: 152px;
+				z-index: 9999;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 12px;
+				background-color: white;
+				overflow: hidden;
+				display: none; /* Se oculta por defecto */
+				}
+
+				/* Estilo para el iframe dentro de la ventana flotante */
+				.floating-spotify iframe {
+				border-radius: 12px;
+				width: 100%;
+				height: 100%;
+				}
+
+				/* Botón de cerrar */
+				.close-btn {
+				position: absolute;
+				top: 5px;
+				left: 5px; /* Cambié a la izquierda */
+				background-color: rgba(0, 0, 0, 0.2);
+				color: white;
+				border: none;
+				padding: 5px;
+				font-size: 20px; /* Ajusté el tamaño de la cruz */
+				cursor: pointer;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				line-height: 30px; /* Ahora alinea mejor la "X" */
+				text-align: center;
+				line-height: 10px;
+				font-weight: bold;
+				}
+			#scroll-container {
+				display: flex;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				gap: 20px;
+				padding: 20px;
+				background: url('images/pic08.jpg') no-repeat center center/cover;
+				margin-top: 20px;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
+			}
+
+			#scroll-container::-webkit-scrollbar {
+				display: none; /* Oculta la barra de scroll en Chrome y Safari */
+			}
+
+			.scroll-item {
+				flex: 0 0 80%; /* Adjust width */
+				scroll-snap-align: center;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				padding: 20px;
+				background-color: rgba(255, 255, 255, 0.8);
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			.scroll-item img {
+				width: 100%;
+				border-radius: 10px;
+				margin-bottom: 15px;
+			}
+
+			.scroll-item blockquote {
+				font-style: italic;
+				color: #555;
+				border-left: 4px solid #58545c;
+				padding-left: 10px;
+				margin: 10px 0;
+			}
+
+			.scroll-item h3 {
+				margin-top: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +120,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="https://drive.google.com/file/d/1nbkAnjECY3oJf2diE4sOE3cjGFPR8fMv/view?usp=drive_link" class="logo">Lee mi CV</a>
+						<a href="cv.pdf" class="logo">Lee mi CV</a>
 					</header>
 
 				<!-- Nav -->
@@ -40,66 +141,204 @@
 					<div id="main">
 
 						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Ágatha del Olmo Tirado</h1>
-								</header>
-								<div class="image left"><img src="images/yo.jpeg" alt="" /></div>
-                                    <p>¡Hola a todos! Soy Ágatha Del Olmo Tirado, una amante del análisis de datos. Desde que era pequeña, siempre tuve una curiosidad insaciable por entender cómo funcionan las cosas, especialmente cuando se trata de datos.
-										Esta curiosidad me llevó a sumergirme de lleno en el mundo del BI & BA. Me encanta desentrañar los patrones ocultos en bases de datos complejas y transformarlos en insights significativos que impulsen la toma de decisiones estratégicas en las organizaciones.</p>
-                                    <blockquote>"En igualdad de condiciones, la solución más simple tiende a ser la correcta.”</blockquote>
-                                    <p>-Navaja de Ockam</p>
-                                    <h3>Historial Académico</h3>
-                                    <p>Actualmente estoy estudiando un grado en Inteligencia y Analítica de Negocios en la prestigiosa Universidad de Valencia (UV).
-                                    Mi trayectoria académica ha sido marcada por mis matrículas de honor en Minería de Datos en Empresas, Predicción en Datos Transversales y Precios y Mercado Competitivo.</p>
-                                    <h3>Competencias Técnicas</h3>
-                                    <p>Mi arsenal técnico está equipado con habilidades en Minería de Datos y ETL (Extract, Transform, Load), perfeccionadas a través de experiencia práctica con RStudio, Microsoft Excel, PowerBI y Weka.
-                                    El Aprendizaje Automático y la Modelización de Algoritmos son mis campos de juego - Python, R, Lingo, SQL, Oracle y Wolfram Mathematica son las herramientas de mi oficio.</p>
-                                    <h3>Trayectoria Profesional</h3>
-                                    <p>En 2024 realicé unas prácticas en Ciencia de Datos en Meriksill donde fui fundamental en la realización de proyectos complejos que involucraban el uso de Excel y PowerBI para construir diferentees paneles de análisis empresarial que podéis encontrar en el Portfolio.</p>
-                                    <h3>Habilidades Blandas</h3>
-                                    <p>Me enorgullezco de mis habilidades para identificar y resolver problemas junto con mi destreza en comunicación verbal y escrita. Soy una persona que se adapta fácilmente, esta web la hice en una semana sin ningún conocimiento previo en HTML ;), pude crear mi propio portfolio donde queda clara mi atención al detalle.</p>
-                                    <h3>Multilingüe</h3>
-                                    <p>Me comunico sin problemas en español (nativo), inglés (avanzado), catalán (elemental), francés (principiante) y árabe (principiante).</p>
-                                    <h3>Compromiso Extracurricular</h3>
-                                    <p>Participé en Idees Motivem UV - 2022 donde construimos un equipo multidisciplinario coordinado por tutores universitarios para presentar soluciones innovadoras empresariales y sociales.
-                                    También participé en Fundamentos de Excel para Negocios - 2023, organizado por la Cátedra Internacional de Finanzas del Banco Santander, con una duración de 35 horas intensivas, impartido por el Profesor Josep Lledó (Universidad de Valencia).</p>
-							</section>
+						<section class="post">
+							<header class="major">
+								<h1>Ágatha del Olmo Tirado</h1>
+							</header>
+							<div class="container">
+								<p class="fade-up">Mientras descubres un poco sobre mí, te invito a escuchar la playlist que me acompaña mientras trabajo. ¡Espero que te guste! 🎶	</p> 
+								<!-- Botón para abrir la ventana flotante -->
+								<button onclick="openSpotify()">¡Escúchame!</button>
+			
+								<!-- Sección de música -->
 
+					<!-- Contenedor flotante de Spotify -->
+					<div id="spotify-container" class="floating-spotify">
+						<button class="close-btn" onclick="closeSpotify()">×</button>
+						<iframe src="https://player.spotify.com/embed/playlist/70E2PO0iRuTZrcm3PK20rb?utm_source=generator" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">agathadelolmo@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Redes Sociales</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+					<script>
+						// Función para abrir la ventana flotante
+						function openSpotify() {
+						  document.getElementById("spotify-container").style.display = "block";
+						}
+					
+						// Función para cerrar la ventana flotante
+						function closeSpotify() {
+						  document.getElementById("spotify-container").style.display = "none";
+						}
+					  </script>					
+
+							<div id="scroll-container">
+								<!-- Historia 1 -->
+								<div class="scroll-item">
+									<h3>El viaje que cambió mi vida - Junio 2019</h3>
+									<img src="images/sf.jpg" alt="San Francisco" />
+									<p>Nací y crecí en un pequeño municipio de España, rodeada de mi familia y amigos, lo que me hacía sentir tan cómoda que nunca había sentido la necesidad de viajar fuera de España.</p>
+									<p>Sin embargo, en el verano de 2019 tuve la increible oportunidad de visitar a unos familiares en plena ciudad de San Francisco, EEUU.</p>
+									<p>Recorrí Silicon Valley, visitar las oficinas de Google, Facebook y Glass, la Universidad de Berkeley... Explorar tan de cerca un mundo tan ligado a la tecnología despertó en mí una nueva perspectiva sobre lo que era capaz de conseguir en un futuro: un impacto real.</p>
+									<blockquote>"El cambio empieza en el final de tu zona de confort.”</blockquote>
+									<p>- Roy T. Bennett</p>
+								</div>
+						
+								<!-- Historia 2 -->
+								<div class="scroll-item">
+									<h3>Mi primer contacto con la programación - Abril 2021</h3>
+									<div style="text-align: center;">
+										<iframe src="https://scratch.mit.edu/projects/525149718/embed" allowtransparency="true" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+									</div>
+									<div style="min-height: 15px;"></div>
+									<p>En primero de bachillerato elegí informática como asignatura. Aprendí los fundamentos de SQL y hardware, pero lo que realmente capturó mi interés fue la programación.</p>
+									<p>Para el proyecto final, debía crear un videojuego con Scratch. Justo en esa época contraje COVID y, durante mi aislamiento, pasé días enteros trabajando en él.</p>
+									<p>Fue el trabajo más emocionante que hice en el instituto. Me quedaba hasta las 4 a.m. perfeccionando cada detalle.</p>
+									<p>Si quieres probarlo, aquí tienes algunos consejos:</p>
+									<ul>
+										<li>Usa las flechas del teclado y la barra espaciadora para seleccionar.</li>
+										<li>Presiona la tecla <strong>m</strong> para cambiar la música y haz clic izquierdo para pescar.</li>
+										<li>Para entrar a una casa, selecciona el cartel que tiene al lado.</li>
+									</ul>
+								</div>
+						
+								<!-- Historia 3 -->
+								<div class="scroll-item">
+									<h3>La importancia de un buen profesor - Mayo 2022</h3>
+									<img src="images/grad.jpg" alt="Graduación" />
+									<p>Curiosamente, durante todo el instituto estaba convencida de que iba a estudiar historia y ser profesora.</p>
+									<p>Pero el día de mi graduación, tras la entrega de Matrícula de Honor, mi profesor de economía Juan Carlos me habló sobre una nueva carrera en Valencia.</p>
+									<p>Me explicó que combinaba programación, economía y análisis de datos, y que tenía un enfoque técnico que podía complementar con cualquier otra disciplina.</p>
+									<p>Como siempre he confiado en la sabiduría de mis profesores, investigué más sobre la carrera... Esa carrera se llamaba Inteligencia y Analítica de Negocios (BIA).</p>
+									<p>Lo cierto es que cuando me matriculé en la carrera no entendía nada de lo que las asignaturas significaban, pero "minería de datos" sonaba divertido y eso, junto a mi intuición, fue suficiente para convencerme de apuntarme.</p>
+								</div>
+
+								<!-- Historia 4 -->
+								<div class="scroll-item">
+									<h3>Un gran cambio - Septiembre 2022</h3>
+									<img src="images/clase.jpg" alt="Graduación" />
+									<p>Mi primer año en Valencia fue toda una aventura. Comencé la universidad en una ciudad nueva, compartiendo piso con personas que no conocía en absoluto. </p>
+									<p>Nueva clase, nuevos compañeros, nuevas asignaturas... Sin duda, fue un gran choque que me obligó a adaptarme y a crecer.</p>
+									<p>Antes solía extrañar la tranquilidad del pueblo, pero con el tiempo, supe valorar las múltiples actividades que Valencia ofrece: realicé cursos de inglés, valenciano y francés, participé en hackathones, me uní a clases de yoga...</p>								
+									<p>He aprendido a valorar la suerte que tengo, pudiendo estudiar una carrera tan relevante, ser independiente y haber tenido la oportunidad de conocer a tantas personas diferentes.</p>
+								</div>
+
+								<div class="scroll-item">
+									<h3>Lo que Valencia me ha ofrecido - siempre</h3>
+									<div class="image-slider">
+										<img id="slider-image" src="images/blogyo.jpg" alt="Experiencia académica" />
+										<button class="prev" onclick="changeImage(-1)">
+											<img src="images/arrowl.png" />
+										  </button>
+										  <button class="next" onclick="changeImage(1)">
+											<img src="images/arrowr.png" />
+										  </button>
+									</div>
+									<p>Valencia y la carrera me han ofrecido unas oportunidades súper interesantes desde el primer día hasta hoy. Estos son solo unos ejemplos:</p>
+									<p>En la primera imagen me encuentro en el evento de inauguración de Economia DataTech, que trata de mantener el contacto con el estudiantado egresado del Grado en BIA realizando eventos, charlas y networking.</p>
+									<p>En la segunda imagen salgo con mis compañeros en el DataViz Challenge: Valencia Smart Vision, donde teníamos la tarea de crear un dashboard con PowerBI sobre el turismo en Valencia.</p>
+									<p>En la última imagen se me ve con mi compañera María, con la que asistí al VDS, el evento tecnológico internacional organizado por Startup Valencia en la Ciudad de las Artes y las Ciencias donde conocí a profesionales increíbles.</p>
+								</div>
+								
+								<script>
+									const images = ["images/blogyo.jpg", "images/dataviz.jpg", "images/vds1.jpg"];
+									let currentIndex = 0;
+								
+									function changeImage(direction) {
+										currentIndex += direction;
+										if (currentIndex < 0) currentIndex = images.length - 1;
+										if (currentIndex >= images.length) currentIndex = 0;
+										document.getElementById("slider-image").src = images[currentIndex];
+									}
+								</script>
+								
+								<style>
+									.image-slider {
+										position: relative;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										max-width: 100%;
+									}
+
+									.image-slider img {
+										width: auto;
+										max-width: 100%;
+										height: auto;
+										display: block;
+									}
+
+									.prev, .next {
+										position: absolute;
+										top: 50%;
+										transform: translateY(-50%);
+										background: none;
+										border: none !important;     /* Elimina cualquier borde */
+										padding: 0;
+										cursor: pointer;
+										z-index: 10;
+										outline: none !important;    /* Elimina cualquier borde de enfoque */
+										box-shadow: none !important; /* Asegura que no haya sombra de enfoque o borde */
+									}
+
+									.prev img, .next img {
+										width: 80px;  /* Ajusta el tamaño de las flechas según lo necesites */
+										height: 80px;
+									}
+
+									.prev {
+										left: 10px;
+									}
+
+									.next {
+										right: 10px;
+									}
+								</style>
+
+								
+							</div>
 						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Ágatha del Olmo Tirado</li></ul>
+						
+									</div>
+								</div>
+							</section>
 					</div>
-
 			</div>
+			
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">agathadelolmo@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Redes Sociales</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+								<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Ágatha del Olmo Tirado</li></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
 
 	</body>
 </html>
