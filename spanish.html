@@ -31,6 +31,70 @@
 			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
 			text-decoration: none; /* Elimina cualquier decoración de enlace */
 			}
+
+			.tag {
+				display: inline-block;
+				background-color: #eaeded;
+				color: #666f88;
+				padding: 4px 10px;
+				border-radius: 10px;
+				font-size: 0.85em;
+				margin-right: 6px;
+				margin-bottom: 2px;
+			}
+					
+			.tags {
+				margin-top: 22px !important;
+				margin-bottom: 12px !important;
+				padding: 0 !important;
+			}
+
+			.image.main {
+				margin-bottom: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			.image.main img {
+				margin-bottom: 0 !important;
+				display: block;
+			}
+
+						/* Ajustes para el Featured Post */
+			#main .post.featured .image.main img {
+				margin-bottom: 20px !important; /* Aumenta el espacio debajo de la imagen */
+				display: block;
+				width: 100%; /* Asegura que la imagen sea responsiva */
+				height: auto;
+			}
+
+			.post.featured h2 a {
+				display: inline-block; /* fuerza que aplique el line-height */
+				font-size: 0.8em !important;
+				line-height: 1.1em !important;
+			}
+
+			#main .post.featured .tags {
+				margin-top: 12px !important; /* Espacio entre las etiquetas y el texto */
+				margin-bottom: 18px !important; /* Añade margen debajo de las etiquetas */
+				padding: 0 !important;
+			}
+
+			#main .post.featured .tag {
+				margin-right: 12px;
+				margin-bottom: 8px; /* Asegura que las etiquetas tengan espacio entre ellas */
+			}
+
+			#main .post.featured .actions.special {
+				margin-top: 20px !important; /* Espacio entre la descripción y el botón 'Read More' */
+			}
+
+			#main .post.featured .actions.special .button {
+				padding: 15px 18px;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+
+
 		</style>
 		
 	</head>
@@ -73,14 +137,14 @@
 					<!-- Featured Post -->
 						<article class="post featured">
 							<header class="major">
-								<span style="font-size: 30px; text-decoration-style: wavy; font-weight: bold;">Publicación destacada</span><hr style="margin: 4px 0;">
-								<p style="margin-top: 4px;"><span class="date">8 de Marzo, 2025</span></p>
-								<h2><a href="Tarea1_espaciales.html">Obteniendo datos de OpenStreetMaps con R</h2>
-								<p>Usando RStudio y Quarto, analicé tres datasets geográficos de OSM diferentes: Plantas hidroeléctricas en España, Industrias en Cataluña y Fallas en Valencia. 🌐</p>
+								<span style="font-size: 30px; text-decoration-style: wavy; font-weight: bold;">Featured post</span><hr style="margin: 4px 0;">
+								<p style="margin-top: 4px;"><span class="date">4 de Mayo, 2025</span></p>
+								<h2><a href="https://rpubs.com/agatha_delolmo/1306947">Estudio de la autocorrelación espacial de la pobreza multidimensional y la migración laboral en los estados de India</h2>
+								<p>Este artículo analiza la distribución espacial de la pobreza multidimensional y la migración laboral en los estados de la India aplicando técnicas de análisis espacial para identificar grupos significativos de valores altos y bajos. 🥻</p>
 								</header>
-							<a href="Tarea1_espaciales.html" class="image main"><img src="images/fallas.jpg" alt="" /></a>
+							<a href="https://rpubs.com/agatha_delolmo/1306947" class="image main"><img src="images/india.jpeg" alt="" /></a>
 							<ul class="actions special">
-								<li><a href="Tarea1_espaciales.html" class="button large">Leer Más</a></li>
+								<li><a href="https://rpubs.com/agatha_delolmo/1306947" class="button large">Leer Más</a></li>
 							</ul>
 						</article>
 						
@@ -92,8 +156,13 @@
 										<h2><a href="proyectos/clasificadores.pdf">Recomendación de clasificadores para el sector crediticio</a></h2>
 									</header>
 									<a href="proyectos/clasificadores.pdf" class="image fit"><img src="images/impago.jpg" alt="" /></a>
-									<p>Usando RStudio y Weka desarrollé los mejores clasificadores para diferenciar a los clientes que tienen un "buen estatus" 
-										frente a aquellos que tienen un "mal estatus" o que no podrán devolver adecuadamente el préstamo. 🏦</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>El proyecto implicó desarrollar clasificadores altamente efectivos para diferenciar entre clientes con un “buen estado” en relación a su préstamo y aquellos con un “mal estado” o un alto riesgo de incumplimiento. 🏦</p>
 									<ul class="actions special">
 										<li><a href="proyectos/clasificadores.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -104,8 +173,13 @@
 										<h2><a href="proyectos/municipios.pdf">ESTUDIO DE LA AGRUPACIÓN SOCIOECONÓMICA DE LOS MUNICIPIOS DEL ÁREA METROPOLITANA DE VALENCIA</a></h2>
 									</header>
 									<a href="proyectos/municipios.pdf" class="image fit"><img src="images/val.jpg" alt="" /></a>
-									<p>Usando RStudio y Weka utilicé técnicas de clustering para agrupar los municipios en grupos homogéneos pero heterogéneros entre sí, lo que nos 
-										permitirá comprender mejor las similitudes y diferencias entre las diversas regiones valencianas. 🌆</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Se utilizaron técnicas de clustering para agrupar los municipios valencianos en grupos homogéneos pero heterogénero, lo que permitirá comprender mejor las diferencias entre ellos. 🌆</p>
 									<ul class="actions special">
 										<li><a href="proyectos/municipios.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -116,8 +190,13 @@
 										<h2><a href="proyectos/ccaa.pdf">ESTUDIO DE LA AGRUPACIÓN SOCIOECONÓMICA DE LAS COMUNIDADES AUTÓNOMAS DE ESPAÑA</a></h2>
 									</header>
 									<a href="proyectos/ccaa.pdf" class="image fit"><img src="images/map.png" alt="" /></a>
-									<p>Usando RStudio y Weka, empleé metodologías de agrupamiento directo y jerárquico con el fin de categorizar comunidades en grupos que sean homogéneos de forma interna pero heterogéneos con respecto al resto de grupos.
-										Este enfoque tiene como objetivo mejorar nuestra comprensión de las características compartidas y las distinciones entre las diferentes comunidades españolas. 📍</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Se utilizan metodologías de agrupamiento directo y jerárquico para categorizar a las comunidades en grupos que son homogéneos por naturaleza pero heterogéneos en cuanto a género. 📍</p>
 									<ul class="actions special">
 										<li><a href="proyectos/ccaa.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -129,7 +208,13 @@
 											Un análisis profundo del experimento del silbato para sistemas de control de impuestos</a></h2>
 									</header>
 									<a href="proyectos/silbato.pdf" class="image fit"><img src="images/tax.jpg" alt="" /></a>
-									<p>Usando RStudio y Excel identifiqué patrones de comportamiento examinando los datos para tomar decisiones más informadas en el futuro en cuanto al control de impuestos. 🧾</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Excel</span>
+									</div>
+
+									<p>Los patrones de comportamiento se identifican examinando los datos de una muestra del experimento del silbido, lo que permite tomar decisiones más informadas en el futuro con respecto al control fiscal.. 🧾</p>
 									<ul class="actions special">
 										<li><a href="proyectos/silbato.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -140,7 +225,12 @@
 										<h2><a href="proyectos/reglas.pdf">ESTUDIO DE LAS REGLAS DE ASOCIACIÓN EN PRODUCTOS DE SUPERMERCADOS Y PLANTILLAS DE EMPLEADOS</a></h2>
 									</header>
 									<a href="proyectos/reglas.pdf" class="image fit"><img src="images/super.jpg" alt="" /></a>
-									<p>Usando Weka empleé técnicas de asociación para encontrar patrones interesantes en la compra de productos en supermercados y en las plantillas de empleados de una empresa para tomar decisiones respecto a la disposición de productos en el establecimiento y estrategias del equipo de RRHH. 🛒</p>
+									
+									<div class="tags">
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Se aplican técnicas de asociación para identificar patrones interesantes en las compras de productos de supermercados y en la dotación de personal, orientando las decisiones sobre la colocación de productos en los establecimientos y las estrategias de RR.HH. 🛒</p>
 									<ul class="actions special">
 										<li><a href="proyectos/reglas.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -153,7 +243,13 @@
 											</a></h2>
 									</header>
 									<a href="proyectos/analisis.pdf" class="image fit"><img src="images/dendograma.png" alt="" /></a>
-									<p>Usando Rstudio y Weka usé técnicas de factorización para tratar de explicar la mayor parte de las variables originales con un número menor de factores. 📋</p>
+									
+									<div class="tags">
+										<span class="tag">Rstudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Se utilizan técnicas de factorización para explicar la mayoría de las variables originales con un número menor de factores para utilizar como predictores potenciales. 📋</p>
 									<ul class="actions special">
 										<li><a href="proyectos/analisis.pdf" class="button">Leer Más</a></li>
 									</ul>

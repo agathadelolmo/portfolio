@@ -21,7 +21,35 @@
 			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
 			text-decoration: none; /* Elimina cualquier decoración de enlace */
 			}
-		</style>s
+
+			.tag {
+				display: inline-block;
+				background-color: #eaeded;
+				color: #666f88;
+				padding: 4px 10px;
+				border-radius: 10px;
+				font-size: 0.85em;
+				margin-right: 6px;
+				margin-bottom: 2px;
+			}
+					
+			.tags {
+				margin-top: 22px !important;
+				margin-bottom: 12px !important;
+				padding: 0 !important;
+			}
+
+			.image.main {
+				margin-bottom: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			.image.main img {
+				margin-bottom: 0 !important;
+				display: block;
+			}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -67,7 +95,13 @@
 										<h2><a href="proyectos/fraud.pdf"> Estudio de Transacciones Fraudulentas con Tarjetas de Crédito I</a></h2>
 									</header>
 									<a href="proyectos/fraud.pdf" class="image fit"><img src="images/card.jpg" alt="" /></a>
-									<p>Usando RStudio y Rmarkdown, desarrollamos un sistema de detección de fraude basado en machine learning para identificar transacciones fraudulentas de forma eficiente, enfocándonos en minimizar los falsos negativos en una base de datos muy poco balanceada. 💳</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Rmarkdown</span>
+									</div>
+
+									<p>Se desarrolló un sistema de detección de fraude basado en aprendizaje automático para identificar con precisión transacciones fraudulentas con tarjetas de crédito, con el objetivo de minimizar los falsos negativos en un conjunto de datos altamente desequilibrado. 💳</p>
 									<ul class="actions special">
 										<li><a href="proyectos/fraud.pdf" class="button">Leer Más</a></li>
 									</ul>
@@ -78,7 +112,13 @@
                                         <h2><a href="tarea2.html">Evaluación de Modelos de Credit Scoring</h2>
                                         </header>
                                     <a href="tarea2.html" class="image main"><img src="images/credit.jpg" alt="" /></a>
-                                    <p>Usando RStudio y Quarto, hemos desarrollado un modelo para credit scoring, enfocándonos en evaluar su desempeño a través del tuneado de hiperparámetros. 🏦</p>
+                                    
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Quarto</span>
+									</div>
+
+									<p>Se desarrolló un modelo para la calificación crediticia, centrándose en evaluar su desempeño a través del ajuste de parámetros. 🏦</p>
                                     <ul class="actions special">
                                         <li><a href="tarea2.html" class="button large">Leer Más</a></li>
                                     </ul>
@@ -89,7 +129,13 @@
                                         <h2><a href="tarea3.html">Estudio de Transacciones Fraudulentas con Tarjetas de Crédito II</h2>
                                         </header>
                                     <a href="tarea3.html" class="image main"><img src="images/fraud.jpg" alt="" /></a>
-                                    <p>Usando RStudio y Quarto, hemos predecido el número de reclaramaciones de pólizas de crédito basándonos en el histórico usando modelos lineales generalizados. 💳</p>
+                                    
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Quarto</span>
+									</div>
+
+									<p>El número de reclamaciones de pólizas se predijo basándose en datos históricos utilizando modelos lineales generalizados. 📑</p>
                                     <ul class="actions special">
                                         <li><a href="tarea3.html" class="button large">Leer Más</a></li>
                                     </ul>
@@ -100,7 +146,13 @@
 										<h2><a href="tarea4.html">Estudio de modelos Random Tree y Random Forest</h2>
 										</header>
 									<a href="tarea4.html" class="image main"><img src="images/titanic.jpg" alt="" /></a>
-									<p>Usando RStudio y Quarto, desarrollamos y evaluamos varios modelos de random tree y random forest para predecir la probabilidad de supervivencia en el Titanic y para la detección de fraudes. 🚢</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Quarto</span>
+									</div>
+
+									<p>Se desarrollaron y evaluaron varios modelos de árboles aleatorios y bosques aleatorios para predecir la probabilidad de supervivencia en el Titanic y detectar fraudes. 🚢</p>
 									<ul class="actions special">
 										<li><a href="tarea4.html" class="button large">Leer Más</a></li>
 									</ul>
@@ -111,7 +163,13 @@
 										<h2><a href="tarea1_modelos.html"> Modelización de fenómenos naturales mediante ecuaciones diferenciales</h2>
 										</header>
 									<a href="tarea1_modelos.html" class="image main"><img src="images/mancha.jpg" alt="" /></a>
-									<p>Usando RStudio y Quarto, simulé numéricamente la propagación de una mancha contaminante en el mar y una epidemia mediante sistemas de ecuaciones diferenciales parciales y ordinarias. 😷</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Quarto</span>
+									</div>
+
+									<p>Se simuló numéricamente la propagación de una mancha de contaminación marina y una epidemia utilizando sistemas de ecuaciones diferenciales parciales y ordinarias. 😷</p>
 									<ul class="actions special">
 										<li><a href="tarea1_modelos.html" class="button large">Leer Más</a></li>
 									</ul>
@@ -122,7 +180,13 @@
 										<h2><a href="Tarea1_espaciales.html"> Obteniendo datos de OpenStreetMaps con R</h2>
 										</header>
 									<a href="Tarea1_espaciales.html" class="image main"><img src="images/fallas.jpg" alt="" /></a>
-									<p>Usando RStudio y Quarto, analicé tres datasets geográficos de OSM diferentes: Plantas hidroeléctricas en España, Industrias en Cataluña y Fallas en Valencia. 🌐</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Quarto</span>
+									</div>
+
+									<p>El estudio analiza tres conjuntos de datos geográficos diferentes de OSM: centrales hidroeléctricas en España, industrias en Cataluña y Fallas en Valencia. 🌐</p>
 									<ul class="actions special">
 										<li><a href="Tarea1_espaciales.html" class="button large">Leer Más</a></li>
 									</ul>

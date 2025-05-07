@@ -21,6 +21,70 @@
 			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
 			text-decoration: none; /* Elimina cualquier decoración de enlace */
 			}
+
+			.tag {
+				display: inline-block;
+				background-color: #eaeded;
+				color: #666f88;
+				padding: 4px 10px;
+				border-radius: 10px;
+				font-size: 0.85em;
+				margin-right: 6px;
+				margin-bottom: 2px;
+			}
+					
+			.tags {
+				margin-top: 22px !important;
+				margin-bottom: 12px !important;
+				padding: 0 !important;
+			}
+
+			.image.main {
+				margin-bottom: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			.image.main img {
+				margin-bottom: 0 !important;
+				display: block;
+			}
+
+						/* Ajustes para el Featured Post */
+			#main .post.featured .image.main img {
+				margin-bottom: 20px !important; /* Aumenta el espacio debajo de la imagen */
+				display: block;
+				width: 100%; /* Asegura que la imagen sea responsiva */
+				height: auto;
+			}
+
+			.post.featured h2 a {
+				display: inline-block; /* fuerza que aplique el line-height */
+				font-size: 0.8em !important;
+				line-height: 1.1em !important;
+			}
+
+			#main .post.featured .tags {
+				margin-top: 12px !important; /* Espacio entre las etiquetas y el texto */
+				margin-bottom: 18px !important; /* Añade margen debajo de las etiquetas */
+				padding: 0 !important;
+			}
+
+			#main .post.featured .tag {
+				margin-right: 12px;
+				margin-bottom: 8px; /* Asegura que las etiquetas tengan espacio entre ellas */
+			}
+
+			#main .post.featured .actions.special {
+				margin-top: 20px !important; /* Espacio entre la descripción y el botón 'Read More' */
+			}
+
+			#main .post.featured .actions.special .button {
+				padding: 15px 18px;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -63,13 +127,13 @@
 						<article class="post featured">
 							<header class="major">
 								<span style="font-size: 30px; text-decoration-style: wavy; font-weight: bold;">Featured post</span><hr style="margin: 4px 0;">
-								<p style="margin-top: 4px;"><span class="date">March 8, 2025</span></p>
-								<h2><a href="Tarea1_espaciales.html">Obtaining data from OpenStreetMaps using R</h2>
-								<p>Using RStudio and Quarto, I analised three different geographic datasets from OSM: Hydroelectric plants in Spain, Industries in Catalonia and Fallas in Valencia. 🌐</p>
+								<p style="margin-top: 4px;"><span class="date">May 4, 2025</span></p>
+								<h2><a href="https://rpubs.com/agatha_delolmo/1306947">Study of the spatial autocorrelation of multidimensional poverty and labor migration across Indian states</h2>
+								<p>This paper analyzes the spatial distribution of multidimensional poverty and labor migration across Indian states applying spatial analysis techniques to identify significant clusters of high and low values. 🥻</p>
 								</header>
-							<a href="Tarea1_espaciales.html" class="image main"><img src="images/fallas.jpg" alt="" /></a>
+							<a href="https://rpubs.com/agatha_delolmo/1306947" class="image main"><img src="images/india.jpeg" alt="" /></a>
 							<ul class="actions special">
-								<li><a href="Tarea1_espaciales.html" class="button large">Read More</a></li>
+								<li><a href="https://rpubs.com/agatha_delolmo/1306947" class="button large">Read More</a></li>
 							</ul>
 						</article>
 
@@ -78,11 +142,16 @@
 								<article>
 									<header>
 										<span class="date">October 9, 2023</span>
-										<h2><a href="projects/classifiers.pdf">RECOMMENDATION OF CLASSIFIERS FOR THE CREDIT SECTOR</a></h2>
+										<h2><a href="projects/classifiers.pdf">Recommendation of classifiers for the credit sector</a></h2>
 									</header>
 									<a href="projects/classifiers.pdf" class="image fit"><img src="images/impago.jpg" alt="" /></a>
-									<p>Using RStudio and Weka I developed the best classifiers to distinguish between customers who will have a "good status" 
-										in relation to their loan and those who will have a "bad status" or who will not repay it adequately. 🏦</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>The project involved developing highly effective classifiers to differentiate between customers with a 'good status' in relation to their loan and those with a 'bad status' or a high risk of default. 🏦</p>
 									<ul class="actions special">
 										<li><a href="projects/classifiers.pdf" class="button">Read More</a></li>
 									</ul>
@@ -90,13 +159,16 @@
 								<article>
 									<header>
 										<span class="date">October 28, 2023</span>
-										<h2><a href="projects/municipalities.pdf">STUDY OF THE SOCIOECONOMIC CLUSTERING OF THE MUNICIPALITIES OF THE METROPOLITAN AREA OF VALENCIA</a></h2>
+										<h2><a href="projects/municipalities.pdf">Study of the socio-economic clustering of the municipalities of the metropolitan area of Valencia</a></h2>
 									</header>
 									<a href="projects/municipalities.pdf" class="image fit"><img src="images/val.jpg" alt="" /></a>
-									<p>Using RStudio and Weka I used clustering techniques to group 
-										municipalities into homogeneous but heterogender groups, which will allow us to 
-										better understand the similarities and differences between the various Valencian 
-										regions. 🌆</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Clustering techniques were used to group Valencian municipalities into homogeneous but heterogender groups, which will allow us to better understand the differences between them. 🌆</p>
 									<ul class="actions special">
 										<li><a href="projects/municipalities.pdf" class="button">Read More</a></li>
 									</ul>
@@ -104,11 +176,16 @@
 								<article>
 									<header>
 										<span class="date">November 15, 2023</span>
-										<h2><a href="projects/ccaa.pdf">STUDY OF THE SOCIO-ECONOMIC CLUSTERING OF THE AUTONOMOUS COMMUNITIES OF SPAIN</a></h2>
+										<h2><a href="projects/ccaa.pdf">Study of the socio-economic clustering of the autonomous communities of Spain</a></h2>
 									</header>
 									<a href="projects/ccaa.pdf" class="image fit"><img src="images/map.png" alt="" /></a>
-									<p>Using RStudio and Weka I utilized both direct and hierarchical clustering methodologies to categorize communities into clusters that are homogeneous yet heterogeneously gendered. 
-										This approach aims to enhance our comprehension of the shared characteristics and distinctions among different Spanish regions. 📍</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Both direct and hierarchical clustering methodologies are used to categorize communities into clusters that are homogeneous in nature but heterogeneously gendered. 📍</p>
 									<ul class="actions special">
 										<li><a href="projects/ccaa.pdf" class="button">Read More</a></li>
 									</ul>
@@ -116,12 +193,16 @@
 								<article>
 									<header>
 										<span class="date">November 30, 2023</span>
-										<h2><a href="projects/whistle.pdf">Rationality vs Morality:
-											An in-depth analysis of the whistle experiment for tax control systems</a></h2>
+										<h2><a href="projects/whistle.pdf">Rationality vs Morality: An in-depth analysis of the whistle experiment for tax control systems</a></h2>
 									</header>
 									<a href="projects/whistle.pdf" class="image fit"><img src="images/tax.jpg" alt="" /></a>
-									<p>Using RStudio and Excel I identified behaviour patterns by examining the
-										data to make more informed decisions in the future regarding tax control. 🧾</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Excel</span>
+									</div>
+
+									<p>Behaviour patterns are identified by examining the data from a whistle experiment sample, enabling more informed decisions in the future regarding tax control. 🧾</p>
 									<ul class="actions special">
 										<li><a href="projects/whistle.pdf" class="button">Read More</a></li>
 									</ul>
@@ -129,13 +210,15 @@
 								<article>
 									<header>
 										<span class="date">December 12, 2023</span>
-										<h2><a href="projects/rules.pdf">STUDY OF THE ASSOCIATION
-											RULES ON SUPERMARKET 
-											PRODUCTS AND 
-											EMPLOYEE STAFFING</a></h2>
+										<h2><a href="projects/rules.pdf">Study of the association rules on supermarket products and employee staffing</a></h2>
 									</header>
 									<a href="projects/rules.pdf" class="image fit"><img src="images/super.jpg" alt="" /></a>
-									<p>Using Weka I managed association techniques to find interesting patterns in buying products at supermarkets and in employees' staff to make decisions regarding products' disposition at an establishment and HR strategies. 🛒</p>
+									
+									<div class="tags">
+										<span class="tag">Weka</span>
+									</div>
+
+									<p>Association techniques are applied to identify interesting patterns in supermarket product purchases and employee staffing, guiding decisions on product placement in establishments and HR strategies. 🛒</p>
 									<ul class="actions special">
 										<li><a href="projects/rules.pdf" class="button">Read More</a></li>
 									</ul>
@@ -143,14 +226,16 @@
 								<article>
 									<header>
 										<span class="date">January 4, 2024</span>
-										<h2><a href="projects/factor.pdf">FACTOR ANALYSIS
-											OF THE SOCIOECONOMIC 
-											VARIABLES ON THE 
-											AUTONOMOUS 
-											COMMUNITIES OF SPAIN</a></h2>
+										<h2><a href="projects/factor.pdf">Factor Analysis of the socioeconomic variables on the autonomous communities of Spain</a></h2>
 									</header>
 									<a href="projects/factor.pdf" class="image fit"><img src="images/dendograma.png" alt="" /></a>
-									<p>Using Rstudio and Weka use factorization techniques to try to explain most of the original variables with a smaller number of factors. 📋</p>
+									
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Weka</span>
+									</div>
+
+									<p> Factorization techniques are used to explain most of the original variables with a smaller number of factors to use as potential predictors. 📋</p>
 									<ul class="actions special">
 										<li><a href="projects/factor.pdf" class="button">Read More</a></li>
 									</ul>
