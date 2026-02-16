@@ -25,7 +25,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			    /* Estilo para la ventana flotante */
+			    /* Style for the floating window */
 				.floating-spotify {
 				position: fixed;
 				bottom: 20px;
@@ -38,31 +38,31 @@
 				border-radius: 12px;
 				background-color: white;
 				overflow: hidden;
-				display: none; /* Se oculta por defecto */
+				display: none; /* Hidden by default */
 				}
 
-				/* Estilo para el iframe dentro de la ventana flotante */
+				/* Style for the iframe inside the floating window */
 				.floating-spotify iframe {
 				border-radius: 12px;
 				width: 100%;
 				height: 100%;
 				}
 
-				/* Botón de cerrar */
+				/* Close button */
 				.close-btn {
 				position: absolute;
 				top: 5px;
-				left: 5px; /* Cambié a la izquierda */
+				left: 5px; /* Changed to the left */
 				background-color: rgba(0, 0, 0, 0.2);
 				color: white;
 				border: none;
 				padding: 5px;
-				font-size: 20px; /* Ajusté el tamaño de la cruz */
+				font-size: 20px; /* Adjusted the size of the cross */
 				cursor: pointer;
 				border-radius: 50%;
 				width: 30px;
 				height: 30px;
-				line-height: 30px; /* Ahora alinea mejor la "X" */
+				line-height: 30px; /* Now better aligns the "X" */
 				text-align: center;
 				line-height: 10px;
 				font-weight: bold;
@@ -77,13 +77,31 @@
 				margin-top: 20px;
 				border: 1px solid #ddd;
 				border-radius: 10px;
-				scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
 			}
 
+						/* Scrollbar moderna */
 			#scroll-container::-webkit-scrollbar {
-				display: none; /* Oculta la barra de scroll en Chrome y Safari */
+				height: 10px;
 			}
 
+			#scroll-container::-webkit-scrollbar-track {
+				background:black transparent;
+			}
+
+			#scroll-container::-webkit-scrollbar-thumb {
+				background: linear-gradient(90deg, #ddd, #ddd);
+				border-radius: 10px;
+			}
+
+			#scroll-container::-webkit-scrollbar-thumb:hover {
+				background: linear-gradient(90deg, #ddd, #ddd);
+			}
+
+			/* Firefox */
+			#scroll-container {
+				scrollbar-width: thin;
+				scrollbar-color: #ddd transparent;
+			}
 			.scroll-item {
 				flex: 0 0 80%; /* Adjust width */
 				scroll-snap-align: center;
@@ -92,13 +110,6 @@
 				padding: 20px;
 				background-color: rgba(255, 255, 255, 0.8);
 				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			}
-
-			@media(max-width:768px){
-				.scroll-item{
-					flex: 0 0 95%;
-					min-width: 90%;
-				}
 			}
 
 			.scroll-item img {
@@ -158,11 +169,6 @@
 								<button onclick="openSpotify()">¡Escúchame!</button>
 			
 						<section class="post">
-							<header class="major">
-							</header>
-							<div class="container">
-								<a><img src="gif.gif" alt="" /></a>
-								<p>Fun Fact: En 2018 aparecí en televisión para hacer un concurso de deletreo, ¡y ganamos!</p>
 
 					<!-- Contenedor flotante de Spotify -->
 					<div id="spotify-container" class="floating-spotify">

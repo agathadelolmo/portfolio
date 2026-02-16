@@ -77,13 +77,31 @@
 				margin-top: 20px;
 				border: 1px solid #ddd;
 				border-radius: 10px;
-				scrollbar-width: none; /* Hides the scroll bar in Firefox */
 			}
 
+						/* Scrollbar moderna */
 			#scroll-container::-webkit-scrollbar {
-				display: none; /* Hides the scroll bar in Chrome and Safari */
+				height: 10px;
 			}
 
+			#scroll-container::-webkit-scrollbar-track {
+				background:black transparent;
+			}
+
+			#scroll-container::-webkit-scrollbar-thumb {
+				background: linear-gradient(90deg, #ddd, #ddd);
+				border-radius: 10px;
+			}
+
+			#scroll-container::-webkit-scrollbar-thumb:hover {
+				background: linear-gradient(90deg, #ddd, #ddd);
+			}
+
+			/* Firefox */
+			#scroll-container {
+				scrollbar-width: thin;
+				scrollbar-color: #ddd transparent;
+			}
 			.scroll-item {
 				flex: 0 0 80%; /* Adjust width */
 				scroll-snap-align: center;
