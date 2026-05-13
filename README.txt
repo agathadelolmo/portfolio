@@ -1,4 +1,4 @@
-https://agathadelolmo.github.io/portfolio/index.html
+To view the portfolio's webpage: https://agathadelolmo.github.io/portfolio/index.html
 
 Credits:
 
