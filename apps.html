@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Agatha del Olmo Tirado · Apps</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.inactive-link {
+			color: gray; /* Cambia el color del texto para indicar que está desactivado */
+			pointer-events: none; /* Evita que el enlace sea clickeable */
+			cursor: default; /* Cambia el cursor a predeterminado para indicar que no es interactivo */
+			text-decoration: none; /* Elimina cualquier decoración de enlace */
+			}
+
+			.tag {
+				display: inline-block;
+				background-color: #eaeded;
+				color: #666f88;
+				padding: 4px 10px;
+				border-radius: 10px;
+				font-size: 0.85em;
+				margin-right: 6px;
+				margin-bottom: 2px;
+			}
+					
+			.tags {
+				margin-top: 22px !important;
+				margin-bottom: 12px !important;
+				padding: 0 !important;
+			}
+
+			.image.main {
+				margin-bottom: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			.image.main img {
+				margin-bottom: 0 !important;
+				display: block;
+			}
+
+						/* Ajustes para el Featured Post */
+			#main .post.featured .image.main img {
+				margin-bottom: 20px !important; /* Aumenta el espacio debajo de la imagen */
+				display: block;
+				width: 100%; /* Asegura que la imagen sea responsiva */
+				height: auto;
+			}
+
+			.post.featured h2 a {
+				display: inline-block; /* fuerza que aplique el line-height */
+				font-size: 0.8em !important;
+				line-height: 1.1em !important;
+			}
+
+			#main .post.featured .tags {
+				margin-top: 12px !important; /* Espacio entre las etiquetas y el texto */
+				margin-bottom: 18px !important; /* Añade margen debajo de las etiquetas */
+				padding: 0 !important;
+			}
+
+			#main .post.featured .tag {
+				margin-right: 12px;
+				margin-bottom: 8px; /* Asegura que las etiquetas tengan espacio entre ellas */
+			}
+
+			#main .post.featured .actions.special {
+				margin-top: 20px !important; /* Espacio entre la descripción y el botón 'Read More' */
+			}
+
+			#main .post.featured .actions.special .button {
+				padding: 15px 18px;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+
+
+			/* ---- Apps page ---- */
+			#main .post.featured .tags { text-align: center; }
+			.app-embed { display: none; margin: 10px 0 20px 0; }
+			.app-embed.is-open { display: block; }
+			.app-embed iframe { width: 100%; height: 760px; border: 1px solid #eaeded; border-radius: 6px; }
+			.app-embed .note { font-size: 0.8em; color: #909498; margin-top: 6px; text-align: center; }
+			@media screen and (max-width: 736px) { .app-embed iframe { height: 600px; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Interactive<br />
+						Apps</h1>
+						<p>Live data apps you can use straight from your browser, no installation needed.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="resume.pdf" class="logo">Read my Resume</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Portfolio Page</a></li>
+							<li class="active"><a href="apps.html">Apps</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="spanish_apps.html" class="🇪🇸"><span class="label"><img src="images/esp.png" alt="" width="40"/></span></a></li>
+							<li><a href="apps.html" class="🇬🇧"><span class="label"><img src="images/ing.png" alt="" width="40"/></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Featured App -->
+						<article class="post featured">
+							<header class="major">
+								<span style="font-size: 30px; text-decoration-style: wavy; font-weight: bold;">Featured app</span><hr style="margin: 4px 0;">
+								<p style="margin-top: 4px;"><span class="date">September 30, 2026</span></p>
+								<h2><a href="https://agathadelolmotirado.shinyapps.io/911_calls_app/" target="_blank">911 calls in real time in Monroe County, NY</a></h2>
+								<p>Interactive map of the active 911 calls in Monroe County (New York), read live from the county's official feed and colour-coded by status. Click on any call to get the driving route, time and distance to the nearest hospital and police station. 🚑</p>
+							</header>
+							<a href="https://agathadelolmotirado.shinyapps.io/911_calls_app/" target="_blank" class="image main"><img src="images/calls_ny.png" alt="Map of live 911 calls with routes to the nearest hospital and police station" /></a>
+
+							<div class="tags">
+								<span class="tag">RStudio</span>
+								<span class="tag">Shiny App</span>
+								<span class="tag">Leaflet</span>
+								<span class="tag">Geospatial</span>
+								<span class="tag">APIs</span>
+							</div>
+
+							<ul class="actions special">
+								<li><a href="https://agathadelolmotirado.shinyapps.io/911_calls_app/" target="_blank" class="button large">Open App</a></li>
+								<li><a href="#" class="button large js-embed" data-target="embed-911" data-close="Hide app">Try it here</a></li>
+								<li><a href="https://github.com/agathadelolmo/911_calls_app" target="_blank" class="button large">Source Code</a></li>
+							</ul>
+
+							<div class="app-embed" id="embed-911">
+								<iframe data-src="https://agathadelolmotirado.shinyapps.io/911_calls_app/" title="911 calls in real time in Monroe County, NY" loading="lazy"></iframe>
+								<p class="note">If nobody has used the app for a while it may take ~20 seconds to wake up.</p>
+							</div>
+						</article>
+
+					<!-- Next apps: copy this block inside the posts section
+						<section class="posts">
+								<article>
+									<header>
+										<span class="date">Month DD, YYYY</span>
+										<h2><a href="URL_APP" target="_blank">App title</a></h2>
+									</header>
+									<a href="URL_APP" target="_blank" class="image fit"><img src="images/MI_APP.png" alt="" /></a>
+
+									<div class="tags">
+										<span class="tag">RStudio</span>
+										<span class="tag">Shiny App</span>
+									</div>
+
+									<p>One or two sentences on what the app does. 📊</p>
+									<ul class="actions special">
+										<li><a href="URL_APP" target="_blank" class="button">Open App</a></li>
+										<li><a href="URL_GITHUB" target="_blank" class="button">Source Code</a></li>
+									</ul>
+								</article>
+						</section>
+					-->
+
+				</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">agathadelolmo@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/agathadelolmo/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="https://github.com/agathadelolmo/agathadelolmo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ágatha del Olmo Tirado</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Carga la app dentro de la página solo cuando se pulsa el botón
+				document.querySelectorAll('.js-embed').forEach(function (btn) {
+					var openLabel = btn.textContent, closeLabel = btn.getAttribute('data-close');
+					btn.addEventListener('click', function (e) {
+						e.preventDefault();
+						var box = document.getElementById(btn.getAttribute('data-target'));
+						var frame = box.querySelector('iframe');
+						if (!frame.getAttribute('src')) frame.setAttribute('src', frame.getAttribute('data-src'));
+						var open = box.classList.toggle('is-open');
+						btn.textContent = open ? closeLabel : openLabel;
+						if (open) box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					});
+				});
+			</script>
+
+	</body>
+</html>
